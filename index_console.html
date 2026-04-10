@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Hello World!</p>
+
+    <!-- Deixado o script no body, pois: -->
+    <!-- 1º precisava criar o "p1" -->
+    <!-- 2º para substituir "p1", é preciso criar ele primeiro para depois substituí-lo -->
+    <!-- É carregado os elementos no navegador de cima para baixo (da linha 1 para 100) - sequência -->
+    <script>
+
+        //Mostra no topo da página um aviso/pop-up
+        alert(1);
+
+        //Substitui o que está escrito em 'p1' com <hr>
+        // <hr> é uma régua
+        document.getElementById('p1').innerHTML = '<hr>';
+        
+        //Escreve um <h1> Olá
+        document.write('<h1>olá</h1>');
+        
+        //Escreve no console "teste" (dar F12 no chrome)
+        console.log('teste');
+    </script>
+</body>
+</html>
